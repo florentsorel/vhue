@@ -6,6 +6,7 @@
     "name": "Rtransat",
     "email": "rtransat@gmail.com"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rtransat/vhue.git"

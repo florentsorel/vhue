@@ -2,7 +2,7 @@
   <div
     class="hue"
     :style="{
-      backgroundColor: isChecked ? color : 'rgb(66, 66, 66)'
+      background: isChecked ? BackgroundColor : 'rgb(66, 66, 66)'
     }"
   >
     <div class="hue-content">
@@ -30,7 +30,7 @@
           class="hue-content-toggle-label"
           @click="handleChange"
           :style="{
-            backgroundColor: isChecked ? Color(color).darken(0.2) : '#7B7B7B'
+            backgroundColor: isChecked ? ToggleColor : '#7B7B7B'
           }"
         >
           Toggle
@@ -42,6 +42,7 @@
 
 <script>
 import Color from "color";
+import Gradient from "tinygradient";
 import icons, { choices } from "../Icon";
 export default {
   name: "Hue",
@@ -59,7 +60,7 @@ export default {
       required: true,
     },
     color: {
-      type: String,
+      type: [String, Array],
       required: true,
     },
     isOn: {
@@ -73,6 +74,19 @@ export default {
     };
   },
   computed: {
+    ToggleColor() {
+      if (Array.isArray(this.color)) {
+        return Color(this.color[this.color.length - 1]).darken(0.2);
+      }
+      return Color(this.color).darken(0.2);
+    },
+    BackgroundColor() {
+      if (Array.isArray(this.color)) {
+        const gradient = Gradient(this.color);
+        return gradient.css("linear");
+      }
+      return this.color;
+    },
     Icon() {
       return this.icon.replace(/\w+/g, function(w) {
         return w[0].toUpperCase() + w.slice(1).toLowerCase();

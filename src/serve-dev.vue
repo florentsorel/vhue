@@ -31,6 +31,14 @@ export default Vue.extend({
       color="#dfdfdf"
       @change="onChange"
     />
+
+    <Hue
+      icon="kitchen"
+      name="Kitchen"
+      :color="['#57ff79', '#ffc457', '#d257ff']"
+      :is-on="true"
+      @change="onChange"
+    />
   </div>
 </template>
 

@@ -90,8 +90,8 @@ Icon to display
 **`name`**: String  
 Name of the room
 
-**`color`**: String  
-Background color of the component when the light is on
+**`color`**: String or Array  
+Background color of the component when the light is on. If array the background will be a gradient
 
 **`:is-on`**: Boolean  
 *default*: false  

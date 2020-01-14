@@ -25,6 +25,14 @@ npm run serve
       :is-on="false"
       @change="onChange"
     />
+
+    <Hue
+      icon="living"
+      name="Living room"
+      :color="['#4a2cb6', '#c66cd8']"
+      :is-on="true"
+      @change="onChange"
+    />
   </div>
 </template>
 
@@ -103,7 +111,7 @@ Indicates if the light is on or off
 <details><summary><strong>Event</strong></summary>
 <br>
 
-**`name`**: Function  
+**`change`**: Function  
 **params**: isOn  
 Do something when is toggle (api call to turn on/off light)
 

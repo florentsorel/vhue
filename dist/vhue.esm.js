@@ -3602,7 +3602,8 @@ var tinygradient = function(stops) {
 var script = {
   name: "Attic",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -3709,7 +3710,7 @@ var __vue_render__ = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -3763,7 +3764,8 @@ const __vue_component__ = normalizeComponent({
 var script$1 = {
   name: "Balcony",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -3795,7 +3797,7 @@ var __vue_render__$1 = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -3849,7 +3851,8 @@ const __vue_component__$1 = normalizeComponent({
 var script$2 = {
   name: "Bathroom",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -3881,7 +3884,7 @@ var __vue_render__$2 = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -3935,7 +3938,8 @@ const __vue_component__$2 = normalizeComponent({
 var script$3 = {
   name: "Bedroom",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -3967,7 +3971,7 @@ var __vue_render__$3 = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4021,7 +4025,8 @@ const __vue_component__$3 = normalizeComponent({
 var script$4 = {
   name: "Carpot",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4053,7 +4058,7 @@ var __vue_render__$4 = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4107,7 +4112,8 @@ const __vue_component__$4 = normalizeComponent({
 var script$5 = {
   name: "Closet",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4139,7 +4145,7 @@ var __vue_render__$5 = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4193,7 +4199,8 @@ const __vue_component__$5 = normalizeComponent({
 var script$6 = {
   name: "Computer",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4225,7 +4232,7 @@ var __vue_render__$6 = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4279,7 +4286,8 @@ const __vue_component__$6 = normalizeComponent({
 var script$7 = {
   name: "Dining",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4311,7 +4319,7 @@ var __vue_render__$7 = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4365,7 +4373,8 @@ const __vue_component__$7 = normalizeComponent({
 var script$8 = {
   name: "Driveway",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4397,7 +4406,7 @@ var __vue_render__$8 = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4451,7 +4460,8 @@ const __vue_component__$8 = normalizeComponent({
 var script$9 = {
   name: "Frontdoor",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4483,7 +4493,7 @@ var __vue_render__$9 = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4537,7 +4547,8 @@ const __vue_component__$9 = normalizeComponent({
 var script$a = {
   name: "Garage",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4569,7 +4580,7 @@ var __vue_render__$a = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4623,7 +4634,8 @@ const __vue_component__$a = normalizeComponent({
 var script$b = {
   name: "Guestroom",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4655,7 +4667,7 @@ var __vue_render__$b = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4709,7 +4721,8 @@ const __vue_component__$b = normalizeComponent({
 var script$c = {
   name: "Gym",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4741,7 +4754,7 @@ var __vue_render__$c = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4795,7 +4808,8 @@ const __vue_component__$c = normalizeComponent({
 var script$d = {
   name: "Hallway",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4827,7 +4841,7 @@ var __vue_render__$d = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4881,7 +4895,8 @@ const __vue_component__$d = normalizeComponent({
 var script$e = {
   name: "Kidsbedroom",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4913,7 +4928,7 @@ var __vue_render__$e = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -4967,7 +4982,8 @@ const __vue_component__$e = normalizeComponent({
 var script$f = {
   name: "Kitchen",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -4999,7 +5015,7 @@ var __vue_render__$f = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5053,7 +5069,8 @@ const __vue_component__$f = normalizeComponent({
 var script$g = {
   name: "Laundryroom",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5085,7 +5102,7 @@ var __vue_render__$g = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5139,7 +5156,8 @@ const __vue_component__$g = normalizeComponent({
 var script$h = {
   name: "Living",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5171,7 +5189,7 @@ var __vue_render__$h = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5225,7 +5243,8 @@ const __vue_component__$h = normalizeComponent({
 var script$i = {
   name: "Lounge",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5257,7 +5276,7 @@ var __vue_render__$i = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5311,7 +5330,8 @@ const __vue_component__$i = normalizeComponent({
 var script$j = {
   name: "Mancave",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5343,7 +5363,7 @@ var __vue_render__$j = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5397,7 +5417,8 @@ const __vue_component__$j = normalizeComponent({
 var script$k = {
   name: "Nursery",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5429,7 +5450,7 @@ var __vue_render__$k = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5483,7 +5504,8 @@ const __vue_component__$k = normalizeComponent({
 var script$l = {
   name: "Office",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5515,7 +5537,7 @@ var __vue_render__$l = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5569,7 +5591,8 @@ const __vue_component__$l = normalizeComponent({
 var script$m = {
   name: "Other",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5601,7 +5624,7 @@ var __vue_render__$m = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5655,7 +5678,8 @@ const __vue_component__$m = normalizeComponent({
 var script$n = {
   name: "Outdoor",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5687,7 +5711,7 @@ var __vue_render__$n = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5741,7 +5765,8 @@ const __vue_component__$n = normalizeComponent({
 var script$o = {
   name: "OutdoorSocialtime",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5773,7 +5798,7 @@ var __vue_render__$o = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5827,7 +5852,8 @@ const __vue_component__$o = normalizeComponent({
 var script$p = {
   name: "Pool",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5859,7 +5885,7 @@ var __vue_render__$p = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5913,7 +5939,8 @@ const __vue_component__$p = normalizeComponent({
 var script$q = {
   name: "Porch",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -5945,7 +5972,7 @@ var __vue_render__$q = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -5999,7 +6026,8 @@ const __vue_component__$q = normalizeComponent({
 var script$r = {
   name: "Recreation",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -6031,7 +6059,7 @@ var __vue_render__$r = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -6085,7 +6113,8 @@ const __vue_component__$r = normalizeComponent({
 var script$s = {
   name: "Socialtime",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -6120,7 +6149,7 @@ var __vue_render__$s = function () {
     }
   }), _vm._v(" "), _c('path', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF',
+      "fill": _vm.checked ? _vm.color : '#FFFFFF',
       "d": "M12.29,22 L12.816,20.432 C13.811,20.793 14.869,21 15.973,21 C17.278,21 18.525,20.725 19.67,20.227 L20.265,22 L12.29,22 Z M27,12 C27.553,12 28,12.447 28,13 C28,13.553 27.553,14 27,14 L25.312,14 C24.546,16.15 23.18,17.969 21.439,19.214 L23.049,24.005 C24.13,24.031 25,24.912 25,26 C25,27.104 24.103,28 23,28 C21.894,28 21,27.104 21,26 C21,25.636 21.104,25.299 21.274,25.005 L20.936,24 L11.618,24 L10.504,27.318 C10.363,27.736 9.973,28 9.555,28 C9.449,28 9.342,27.982 9.236,27.947 C8.713,27.771 8.432,27.205 8.607,26.682 L11.005,19.543 C9.028,18.302 7.472,16.352 6.634,14 L5,14 C4.447,14 4,13.553 4,13 C4,12.447 4.447,12 5,12 L6.117,12 C6.068,11.707 6.024,11.412 5.997,11.111 C5.943,10.519 6.4,10 6.997,10 L24.949,10 C25.545,10 26.003,10.519 25.949,11.111 C25.922,11.412 25.878,11.707 25.829,12 L27,12 Z M12.7226,7.916 C12.6486,7.867 11.9996,7.414 11.9996,6.723 C11.9996,6.422 12.1246,5.982 12.7226,5.584 C12.9256,5.447 12.9996,5.334 12.9996,5.277 C12.9996,5.172 12.8356,4.994 12.7226,4.916 C12.4926,4.762 12.4296,4.451 12.5836,4.223 C12.6796,4.078 12.8376,4 12.9996,4 C13.0956,4 13.1916,4.027 13.2776,4.084 C13.3516,4.133 13.9996,4.586 13.9996,5.277 C13.9996,5.576 13.8746,6.018 13.2776,6.416 C13.0726,6.551 12.9996,6.666 12.9996,6.721 C12.9976,6.826 13.1616,7.004 13.2796,7.086 C13.5076,7.238 13.5686,7.549 13.4156,7.777 C13.2616,8.008 12.9496,8.068 12.7226,7.916 Z M15.7226,7.916 C15.6486,7.867 14.9996,7.414 14.9996,6.723 C14.9996,6.423 15.1246,5.982 15.7226,5.584 C15.9256,5.448 15.9996,5.334 15.9996,5.278 C15.9996,5.173 15.8356,4.995 15.7226,4.916 C15.4926,4.763 15.4296,4.452 15.5836,4.223 C15.6796,4.078 15.8376,4 15.9996,4 C16.0956,4 16.1916,4.027 16.2776,4.084 C16.3516,4.133 16.9996,4.586 16.9996,5.277 C16.9996,5.577 16.8746,6.018 16.2776,6.416 C16.0726,6.552 15.9996,6.666 15.9996,6.722 C15.9976,6.827 16.1616,7.005 16.2796,7.086 C16.5076,7.239 16.5686,7.549 16.4156,7.777 C16.2616,8.008 15.9496,8.068 15.7226,7.916 Z M18.7226,7.916 C18.6486,7.867 17.9996,7.414 17.9996,6.723 C17.9996,6.422 18.1246,5.982 18.7226,5.584 C18.9256,5.447 18.9996,5.334 18.9996,5.277 C18.9996,5.172 18.8356,4.994 18.7226,4.916 C18.4926,4.762 18.4296,4.451 18.5836,4.223 C18.6796,4.078 18.8376,4 18.9996,4 C19.0956,4 19.1916,4.027 19.2776,4.084 C19.3516,4.133 19.9996,4.586 19.9996,5.277 C19.9996,5.576 19.8746,6.018 19.2776,6.416 C19.0726,6.551 18.9996,6.666 18.9996,6.721 C18.9976,6.826 19.1616,7.004 19.2796,7.086 C19.5076,7.238 19.5686,7.549 19.4156,7.777 C19.2616,8.008 18.9496,8.068 18.7226,7.916 Z"
     }
   })])]);
@@ -6171,7 +6200,8 @@ const __vue_component__$s = normalizeComponent({
 var script$t = {
   name: "Staircase",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -6203,7 +6233,7 @@ var __vue_render__$t = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -6257,7 +6287,8 @@ const __vue_component__$t = normalizeComponent({
 var script$u = {
   name: "Storage",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -6289,7 +6320,7 @@ var __vue_render__$u = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -6343,7 +6374,8 @@ const __vue_component__$u = normalizeComponent({
 var script$v = {
   name: "Studio",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -6375,7 +6407,7 @@ var __vue_render__$v = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -6429,7 +6461,8 @@ const __vue_component__$v = normalizeComponent({
 var script$w = {
   name: "Terrace",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -6461,7 +6494,7 @@ var __vue_render__$w = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -6515,7 +6548,8 @@ const __vue_component__$w = normalizeComponent({
 var script$x = {
   name: "Toilet",
   props: {
-    checked: Boolean
+    checked: Boolean,
+    color: String
   }
 };
 
@@ -6547,7 +6581,7 @@ var __vue_render__$x = function () {
     }
   }, [_c('g', {
     attrs: {
-      "fill": _vm.checked ? '#101010' : '#FFFFFF'
+      "fill": _vm.checked ? _vm.color : '#FFFFFF'
     }
   }, [_c('path', {
     attrs: {
@@ -6659,8 +6693,22 @@ var script$y = {
       return color(this.color).darken(0.2);
     },
 
+    FontColor() {
+      let color$1 = this.color;
+
+      if (Array.isArray(this.color)) {
+        color$1 = this.color[0];
+      }
+
+      return color(color$1).isLight() ? '#101010' : '#FFFFFF';
+    },
+
     BackgroundColor() {
       if (Array.isArray(this.color)) {
+        if (this.color.length < 2) {
+          return this.color[0];
+        }
+
         const gradient = tinygradient(this.color);
         return gradient.css("linear");
       }
@@ -6761,6 +6809,7 @@ var __vue_render__$y = function () {
   }, [_c(_vm.Icon, {
     tag: "component",
     attrs: {
+      "color": _vm.FontColor,
       "checked": _vm.isChecked
     }
   })], 1), _vm._v(" "), _c('div', {
@@ -6768,7 +6817,7 @@ var __vue_render__$y = function () {
   }, [_c('div', {
     staticClass: "hue-content-text-name",
     style: {
-      color: _vm.isChecked ? '#000000' : '#FFFFFF'
+      color: _vm.isChecked ? _vm.FontColor : '#FFFFFF'
     }
   }, [_vm._v("\n        " + _vm._s(_vm.name) + "\n      ")])]), _vm._v(" "), _c('div', {
     staticClass: "hue-content-toggle"
@@ -6797,8 +6846,8 @@ var __vue_staticRenderFns__$y = [];
 
 const __vue_inject_styles__$y = function (inject) {
   if (!inject) return;
-  inject("data-v-b198cad0_0", {
-    source: ".hue[data-v-b198cad0]{font-family:Arial,Helvetica Neue,Helvetica,sans-serif;border-radius:10px;padding:20px;max-width:300px;min-width:280px;position:relative;transition:all .3s ease}.hue-content[data-v-b198cad0]{display:flex;min-height:40px}.hue-content-icon[data-v-b198cad0]{align-self:center;flex:0 0 32px;height:32px;max-width:32px}.hue-content-text[data-v-b198cad0]{align-self:center;margin:0 16px;width:10rem}.hue-content-text-name[data-v-b198cad0]{flex:1 0 auto;font-weight:700;font-size:16px;line-height:24px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.hue-content-toggle[data-v-b198cad0]{align-self:center;margin-left:auto}.hue-content-toggle-checkbox[data-v-b198cad0]{height:0;width:0;display:none}.hue-content-toggle-checkbox:checked+.hue-content-toggle-label[data-v-b198cad0]:after{background:#fff;left:100%;transform:translate(-100%,-50%)}.hue-content-toggle-label[data-v-b198cad0]{cursor:pointer;text-indent:-9999px;width:40px;height:18px;display:block;border-radius:100px;position:relative}.hue-content-toggle-label[data-v-b198cad0]:active:after{width:25px}.hue-content-toggle-label[data-v-b198cad0]:after{content:\"\";position:absolute;top:50%;left:0;width:22px;height:22px;background:#b9b9b9;border-radius:90px;transition:.3s;transform:translateY(-50%)}",
+  inject("data-v-acd336b2_0", {
+    source: ".hue[data-v-acd336b2]{font-family:Arial,Helvetica Neue,Helvetica,sans-serif;border-radius:10px;padding:20px;max-width:300px;min-width:290px;position:relative;transition:all .3s ease}.hue-content[data-v-acd336b2]{display:flex;min-height:40px}.hue-content-icon[data-v-acd336b2]{align-self:center;flex:0 0 32px;height:32px;max-width:32px}.hue-content-text[data-v-acd336b2]{align-self:center;margin:0 16px;width:150px}.hue-content-text-name[data-v-acd336b2]{flex:1 0 auto;font-weight:700;font-size:16px;line-height:24px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.hue-content-toggle[data-v-acd336b2]{align-self:center;margin-left:auto}.hue-content-toggle-checkbox[data-v-acd336b2]{height:0;width:0;display:none}.hue-content-toggle-checkbox:checked+.hue-content-toggle-label[data-v-acd336b2]:after{background:#fff;left:100%;transform:translate(-100%,-50%)}.hue-content-toggle-label[data-v-acd336b2]{cursor:pointer;text-indent:-9999px;width:40px;height:18px;display:block;border-radius:100px;position:relative}.hue-content-toggle-label[data-v-acd336b2]:active:after{width:25px}.hue-content-toggle-label[data-v-acd336b2]:after{content:\"\";position:absolute;top:50%;left:0;width:22px;height:22px;background:#b9b9b9;border-radius:90px;transition:.3s;transform:translateY(-50%)}",
     map: undefined,
     media: undefined
   });
@@ -6806,7 +6855,7 @@ const __vue_inject_styles__$y = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__$y = "data-v-b198cad0";
+const __vue_scope_id__$y = "data-v-acd336b2";
 /* module identifier */
 
 const __vue_module_identifier__$y = undefined;

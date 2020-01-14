@@ -1,6 +1,6 @@
 {
   "name": "vhue",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Philips Hue component for Vue.js",
   "author": {
     "name": "Rtransat",
@@ -48,6 +48,8 @@
     "color": "^3.1.2",
     "cross-env": "^6.0.3",
     "dart-sass": "^1.24.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.1.2",
     "minimist": "^1.2.0",
     "rollup": "^1.27.13",
     "rollup-plugin-babel": "^4.3.3",

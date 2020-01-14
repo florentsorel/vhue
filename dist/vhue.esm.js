@@ -6883,6 +6883,7 @@ const install = function (Vue) {
 const plugin = {
   install
 }; // To auto-install when vue is found
+// eslint-disable-next-line no-redeclare
 
 /* global window global */
 

@@ -7,13 +7,13 @@
   >
     <div class="hue-content">
       <div class="hue-content-icon">
-        <component :is="Icon" :checked="isChecked" />
+        <component :is="Icon" :color="FontColor" :checked="isChecked" />
       </div>
       <div class="hue-content-text">
         <div
           class="hue-content-text-name"
           :style="{
-            color: isChecked ? '#000000' : '#FFFFFF'
+            color: isChecked ? FontColor : '#FFFFFF'
           }"
         >
           {{ name }}
@@ -80,8 +80,18 @@ export default {
       }
       return Color(this.color).darken(0.2);
     },
+    FontColor() {
+      let color = this.color;
+      if (Array.isArray(this.color)) {
+        color = this.color[0];
+      }
+      return Color(color).isLight() ? '#101010' : '#FFFFFF';
+    },
     BackgroundColor() {
       if (Array.isArray(this.color)) {
+        if (this.color.length < 2) {
+          return this.color[0];
+        }
         const gradient = Gradient(this.color);
         return gradient.css("linear");
       }
@@ -109,7 +119,7 @@ export default {
   border-radius: 10px;
   padding: 20px;
   max-width: 300px;
-  min-width: 280px;
+  min-width: 290px;
   position: relative;
   transition: all 0.3s ease;
 }
@@ -129,7 +139,7 @@ export default {
 .hue-content-text {
   align-self: center;
   margin: 0 16px;
-  width: 10rem;
+  width: 150px;
 }
 
 .hue-content-text-name {

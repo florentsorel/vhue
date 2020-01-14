@@ -18,8 +18,8 @@ export default Vue.extend({
 <template>
   <div id="app">
     <Hue
-      icon="living"
-      name="Living room"
+      icon="kitchen"
+      name="Kitchen"
       color="#ffc457"
       :is-on="true"
       @change="onChange"
@@ -28,15 +28,31 @@ export default Vue.extend({
     <Hue
       icon="bedroom"
       name="Bedroom"
-      color="#dfdfdf"
+      color="#f2e2cd"
       @change="onChange"
     />
 
     <Hue
-      icon="kitchen"
-      name="Kitchen"
-      :color="['#57ff79', '#ffc457', '#d257ff']"
+      icon="living"
+      name="Living room"
+      :color="['#4a2cb6', '#c66cd8']"
       :is-on="true"
+      @change="onChange"
+    />
+
+    <Hue
+      icon="computer"
+      name="Gaming room"
+      :color="['#d8d16c', '#b62c2c']"
+      :is-on="true"
+      @change="onChange"
+    />
+
+    <Hue
+      icon="garage"
+      name="Garage"
+      color="#7e2626"
+      :is-on="false"
       @change="onChange"
     />
   </div>
@@ -46,7 +62,7 @@ export default Vue.extend({
 body {
   align-items: center;
   background-color: #ffa69e;
-  background-image: linear-gradient(315deg, #ffa69e 0%, #5d4954 74%);
+  background-image: radial-gradient(#C08ED6 0%, #281E29 100%);
   display: flex;
   height: 100vh;
   margin: 0;

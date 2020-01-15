@@ -20,6 +20,7 @@
     "philips hue"
   ],
   "main": "dist/vhue.ssr.js",
+  "browser": "dist/vhue.esm.js",
   "module": "dist/vhue.esm.js",
   "unpkg": "dist/vhue.min.js",
   "files": [

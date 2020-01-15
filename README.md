@@ -1,5 +1,7 @@
 ![vhue component](/screenshot.png?raw=true "vhue")
 
+[Demo](https://zq0n5.csb.app/) | [Source](https://codesandbox.io/s/vhue-zq0n5)
+
 ## Installation
 ```
 npm install vhue

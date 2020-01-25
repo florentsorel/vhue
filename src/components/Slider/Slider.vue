@@ -1,17 +1,17 @@
 <template>
-  <div class="hue-slider-container">
+  <div class="vhue-slider-container">
     <div
-      class="hue-slider"
+      class="vhue-slider"
       :style="{
         background: isVisible ? backgroundColor : 'rgb(66, 66, 66)',
       }"
       ref="slider"
       @mousedown="handleDown"
     >
-      <div class="hue-slider-overlay"></div>
-      <div class="hue-slider-progress" ref="progress" :style="{width: value + '%'}"></div>
-      <div class="hue-slider-dot-container" ref="dot" :style="{left: 'calc('+value+'% - ' + dotHalfWidth + 'px)'}">
-        <div class="hue-slider-dot"></div>
+      <div class="vhue-slider-overlay"></div>
+      <div class="vhue-slider-progress" ref="progress" :style="{width: value + '%'}"></div>
+      <div class="vhue-slider-dot-container" ref="dot" :style="{left: 'calc('+value+'% - ' + dotHalfWidth + 'px)'}">
+        <div class="vhue-slider-dot"></div>
       </div>
     </div>
   </div>
@@ -86,20 +86,20 @@ export default {
 $dot-width: 22px;
 $dot-height: $dot-width;
 
-.hue-slider-container {
+.vhue-slider-container {
   height: 14px;
   position: relative;
   width: 100%;
 }
 
-.hue-slider {
+.vhue-slider {
   background: #777;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden;
 }
 
-.hue-slider-overlay {
+.vhue-slider-overlay {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 100%;
@@ -108,7 +108,7 @@ $dot-height: $dot-width;
   position: absolute;
 }
 
-.hue-slider-progress {
+.vhue-slider-progress {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.7) 100%);
   height: 14px;
   position: relative;
@@ -116,7 +116,7 @@ $dot-height: $dot-width;
   z-index: 1;
 }
 
-.hue-slider-dot-container {
+.vhue-slider-dot-container {
   height: 30px;
   width: 30px;
   position: absolute;
@@ -125,7 +125,7 @@ $dot-height: $dot-width;
   z-index: 2;
 }
 
-.hue-slider-dot {
+.vhue-slider-dot {
   background: #ffffff;
   border-radius: 50%;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);

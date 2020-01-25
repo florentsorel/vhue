@@ -1,20 +1,20 @@
 <template>
-  <div class="hue-container" :class="{'is-dragging': dragging}">
+  <div class="vhue-container" :class="{'is-dragging': dragging}">
     <div
-      class="hue"
+      class="vhue"
       :style="{
         background: isChecked ? BackgroundColor : 'rgb(66, 66, 66)',
         borderBottomLeftRadius: isChecked ? '0' : '10px',
         borderBottomRightRadius: isChecked ? '0' : '10px',
       }"
     >
-      <div class="hue-content">
-        <div class="hue-content-icon">
+      <div class="vhue-content">
+        <div class="vhue-content-icon">
           <component :is="Icon" :color="FontColor" :checked="isChecked" />
         </div>
-        <div class="hue-content-text">
+        <div class="vhue-content-text">
           <div
-            class="hue-content-text-name"
+            class="vhue-content-text-name"
             :style="{
               color: isChecked ? FontColor : '#FFFFFF',
               fontSize: dragging ? '14px' : '16px'
@@ -23,15 +23,15 @@
             {{ dragging ? value + '%' : name }}
           </div>
         </div>
-        <div class="hue-content-toggle">
+        <div class="vhue-content-toggle">
           <input
             type="checkbox"
-            class="hue-content-toggle-checkbox"
+            class="vhue-content-toggle-checkbox"
             :checked="isChecked"
             value="1"
           />
           <label
-            class="hue-content-toggle-label"
+            class="vhue-content-toggle-label"
             @click="handleToggle"
             :style="{
               backgroundColor: isChecked ? ToggleColor : '#7B7B7B'
@@ -147,7 +147,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hue-container {
+.vhue-container {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   
   max-width: 300px;
@@ -163,30 +163,30 @@ export default {
   }
 }
 
-.hue {
+.vhue {
   padding: 20px;
   border-radius: 10px;
 }
 
-.hue-content {
+.vhue-content {
   display: flex;
   min-height: 40px;
 }
 
-.hue-content-icon {
+.vhue-content-icon {
   align-self: center;
   flex: 0 0 32px;
   height: 32px;
   max-width: 32px;
 }
 
-.hue-content-text {
+.vhue-content-text {
   align-self: center;
   margin: 0 16px;
   width: 150px;
 }
 
-.hue-content-text-name {
+.vhue-content-text-name {
   flex: 1 0 auto;
   font-weight: 700;
   font-size: 16px;
@@ -196,17 +196,17 @@ export default {
   white-space: nowrap;
 }
 
-.hue-content-toggle {
+.vhue-content-toggle {
   align-self: center;
   margin-left: auto;
 }
 
-.hue-content-toggle-checkbox {
+.vhue-content-toggle-checkbox {
   height: 0;
   width: 0;
   display: none;
   &:checked {
-    + .hue-content-toggle-label {
+    + .vhue-content-toggle-label {
       &:after {
         background: #ffffff;
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
@@ -217,7 +217,7 @@ export default {
   }
 }
 
-.hue-content-toggle-label {
+.vhue-content-toggle-label {
   cursor: pointer;
   text-indent: -9999px;
   width: 40px;

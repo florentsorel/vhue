@@ -94,7 +94,7 @@ body {
   flex-direction: column;
 }
 
-.hue-container + .hue-container {
+.vhue-container + .vhue-container {
   margin-top: 24px;
 }
 </style>

@@ -8,8 +8,13 @@ export default Vue.extend({
     Hue,
   },
   methods: {
-    onChange(isOn) {
-      console.log(isOn);
+    onToggle(id, isOn) {
+      console.log(id, 'light ID');
+      console.log(isOn, `slider is${isOn ? '' : ' not'} visible`);
+    },
+    onChange(id, value) {
+      console.log(id, 'light ID');
+      console.log(value, `value slider`);
     }
   }
 });
@@ -19,40 +24,55 @@ export default Vue.extend({
   <div id="app">
     <Hue
       icon="kitchen"
-      name="Kitchen"
+      id="kitchen"
       color="#ffc457"
+      :intensity="30"
       :is-on="true"
+      name="Kitchen"
+      @toggle="onToggle"
       @change="onChange"
     />
 
     <Hue
       icon="bedroom"
-      name="Bedroom"
+      id="bedroom"
       color="#f2e2cd"
+      :intensity="50"
+      name="Bedroom"
+      @toggle="onToggle"
       @change="onChange"
     />
 
     <Hue
       icon="living"
-      name="Living room"
+      id="living"
       :color="['#4a2cb6', '#c66cd8']"
+      name="Living room"
+      :intensity="90"
       :is-on="true"
+      @toggle="onToggle"
       @change="onChange"
     />
 
     <Hue
+      id="computer"
       icon="computer"
-      name="Gaming room"
       :color="['#d8d16c', '#b62c2c']"
+      name="Gaming room"
+      :intensity="90"
       :is-on="true"
+      @toggle="onToggle"
       @change="onChange"
     />
 
     <Hue
       icon="garage"
-      name="Garage"
+      id="garage"
       color="#7e2626"
+      name="Garage"
+      :intensity="20"
       :is-on="false"
+      @toggle="onToggle"
       @change="onChange"
     />
   </div>
@@ -74,7 +94,7 @@ body {
   flex-direction: column;
 }
 
-.hue + .hue {
+.vhue-container + .vhue-container {
   margin-top: 24px;
 }
 </style>

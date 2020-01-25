@@ -8,8 +8,11 @@ export default Vue.extend({
     Hue,
   },
   methods: {
-    onChange(isOn) {
+    onToggle(isOn) {
       console.log(isOn);
+    },
+    onChange(value) {
+      console.log(value);
     }
   }
 });
@@ -22,6 +25,8 @@ export default Vue.extend({
       name="Kitchen"
       color="#ffc457"
       :is-on="true"
+      :intensity="30"
+      @toggle="onToggle"
       @change="onChange"
     />
 
@@ -29,6 +34,8 @@ export default Vue.extend({
       icon="bedroom"
       name="Bedroom"
       color="#f2e2cd"
+      :intensity="50"
+      @toggle="onToggle"
       @change="onChange"
     />
 
@@ -37,6 +44,8 @@ export default Vue.extend({
       name="Living room"
       :color="['#4a2cb6', '#c66cd8']"
       :is-on="true"
+      :intensity="90"
+      @toggle="onToggle"
       @change="onChange"
     />
 
@@ -45,6 +54,8 @@ export default Vue.extend({
       name="Gaming room"
       :color="['#d8d16c', '#b62c2c']"
       :is-on="true"
+      :intensity="90"
+      @toggle="onToggle"
       @change="onChange"
     />
 
@@ -53,6 +64,8 @@ export default Vue.extend({
       name="Garage"
       color="#7e2626"
       :is-on="false"
+      :intensity="20"
+      @toggle="onToggle"
       @change="onChange"
     />
   </div>
@@ -74,7 +87,7 @@ body {
   flex-direction: column;
 }
 
-.hue + .hue {
+.hue-container + .hue-container {
   margin-top: 24px;
 }
 </style>

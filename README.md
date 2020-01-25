@@ -113,9 +113,13 @@ Indicates if the light is on or off
 <details><summary><strong>Event</strong></summary>
 <br>
 
-**`change`**: Function  
+**`toggle`**: Function  
 **params**: isOn  
-Do something when is toggle (api call to turn on/off light)
+Trigger when the switch button is checked
+
+**`change`**: Function  
+**params**: value  
+Trigger when the slider value change
 
 <br/>
 </details>

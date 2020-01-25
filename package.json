@@ -1,6 +1,6 @@
 {
   "name": "vhue",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "Philips Hue component for Vue.js",
   "author": {
     "name": "Rtransat",

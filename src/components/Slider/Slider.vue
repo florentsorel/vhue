@@ -6,7 +6,7 @@
         background: isVisible ? backgroundColor : 'rgb(66, 66, 66)',
       }"
       ref="slider"
-      @mousedown="handleDown($event)"
+      @mousedown="handleDown"
     >
       <div class="hue-slider-overlay"></div>
       <div class="hue-slider-progress" ref="progress" :style="{width: value + '%'}"></div>

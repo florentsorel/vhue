@@ -64,6 +64,10 @@ export default {
     Slider
   }),
   props: {
+    color: {
+      type: [String, Array],
+      required: true,
+    },
     icon: {
       type: String,
       required: true,
@@ -71,44 +75,27 @@ export default {
         return choices.indexOf(value) !== -1;
       }
     },
-    name: {
-      type: String,
-      required: true,
-    },
-    color: {
-      type: [String, Array],
-      required: true,
+    intensity: {
+      type: Number,
+      required: true
     },
     isOn: {
       type: Boolean,
       default: false,
     },
-    intensity: {
-      type: Number,
-      required: true
+    name: {
+      type: String,
+      required: true,
     }
   },
   data() {
     return {
-      isChecked: this.isOn,
-      value: this.intensity,
       dragging: false,
+      isChecked: this.isOn,
+      value: this.intensity
     };
   },
   computed: {
-    ToggleColor() {
-      if (Array.isArray(this.color)) {
-        return Color(this.color[this.color.length - 1]).darken(0.2);
-      }
-      return Color(this.color).darken(0.2);
-    },
-    FontColor() {
-      let color = this.color;
-      if (Array.isArray(this.color)) {
-        color = this.color[0];
-      }
-      return Color(color).isLight() ? '#101010' : '#FFFFFF';
-    },
     BackgroundColor() {
       if (Array.isArray(this.color)) {
         if (this.color.length < 2) {
@@ -119,10 +106,23 @@ export default {
       }
       return this.color;
     },
+    FontColor() {
+      let color = this.color;
+      if (Array.isArray(this.color)) {
+        color = this.color[0];
+      }
+      return Color(color).isLight() ? '#101010' : '#FFFFFF';
+    },
     Icon() {
       return this.icon.replace(/\w+/g, function(w) {
         return w[0].toUpperCase() + w.slice(1).toLowerCase();
       });
+    },
+    ToggleColor() {
+      if (Array.isArray(this.color)) {
+        return Color(this.color[this.color.length - 1]).darken(0.2);
+      }
+      return Color(this.color).darken(0.2);
     }
   },
   methods: {
@@ -205,6 +205,7 @@ export default {
     + .hue-content-toggle-label {
       &:after {
         background: #ffffff;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
         left: 100%;
         transform: translate(-100%, -50%);
       }
@@ -226,6 +227,7 @@ export default {
     }
   }
   &:after {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
     content: "";
     position: absolute;
     top: 50%;

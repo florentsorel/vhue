@@ -21,29 +21,29 @@
 export default {
   name: "Slider",
   props: {
+    backgroundColor: {
+      type: String,
+      required: true
+    },
+    isVisible: {
+      type: Boolean,
+      required: true
+    },
     value: {
       type: Number,
       required: true,
       validator(value) {
         return value >= 0 && value <= 100;
       }
-    },
-    isVisible: {
-      type: Boolean,
-      required: true
-    },
-    backgroundColor: {
-      type: String,
-      required: true
     }
   },
   data() {
     return {
-      dragging: false,
-      sliderWidth: null,
-      sliderLeftPosition: null,
-      progress: null,
       dotHalfWidth: 15,
+      dragging: false,
+      progress: null,
+      sliderLeftPosition: null,
+      sliderWidth: null
     };
   },
   methods: {

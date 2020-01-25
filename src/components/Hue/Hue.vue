@@ -68,6 +68,10 @@ export default {
       type: [String, Array],
       required: true,
     },
+    id: {
+      type: String,
+      required: true,
+    },
     icon: {
       type: String,
       required: true,
@@ -128,11 +132,11 @@ export default {
   methods: {
     handleToggle() {
       this.isChecked = !this.isChecked;
-      this.$emit("toggle", this.isChecked);
+      this.$emit("toggle", this.id, this.isChecked);
     },
     handleChange(value) {
       this.value = value;
-      this.$emit("change", value);
+      this.$emit("change", this.id, value);
     },
     handleDragging(value) {
       this.dragging = value;

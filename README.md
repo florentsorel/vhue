@@ -98,7 +98,10 @@ Icon to display
 - toilet
 
 **`name`**: String  
-Name of the room
+ID of the light  
+
+**`name`**: String  
+Name of the light
 
 **`color`**: String or Array  
 Background color of the component when the light is on. If array the background will be a gradient
@@ -117,11 +120,11 @@ Indicates if the light is on or off
 <br>
 
 **`toggle`**: Function  
-**params**: isOn  
+**params**: id, isOn  
 Trigger when the switch button is checked
 
 **`change`**: Function  
-**params**: value  
+**params**: id, value  
 Trigger when the slider value change
 
 <br/>

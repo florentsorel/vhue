@@ -8,11 +8,13 @@ export default Vue.extend({
     Hue,
   },
   methods: {
-    onToggle(isOn) {
-      console.log(isOn);
+    onToggle(id, isOn) {
+      console.log(id, 'light ID');
+      console.log(isOn, `slider is${isOn ? '' : ' not'} visible`);
     },
-    onChange(value) {
-      console.log(value);
+    onChange(id, value) {
+      console.log(id, 'light ID');
+      console.log(value, `value slider`);
     }
   }
 });
@@ -22,49 +24,54 @@ export default Vue.extend({
   <div id="app">
     <Hue
       icon="kitchen"
-      name="Kitchen"
+      id="kitchen"
       color="#ffc457"
-      :is-on="true"
       :intensity="30"
+      :is-on="true"
+      name="Kitchen"
       @toggle="onToggle"
       @change="onChange"
     />
 
     <Hue
       icon="bedroom"
-      name="Bedroom"
+      id="bedroom"
       color="#f2e2cd"
       :intensity="50"
+      name="Bedroom"
       @toggle="onToggle"
       @change="onChange"
     />
 
     <Hue
       icon="living"
-      name="Living room"
+      id="living"
       :color="['#4a2cb6', '#c66cd8']"
-      :is-on="true"
+      name="Living room"
       :intensity="90"
+      :is-on="true"
       @toggle="onToggle"
       @change="onChange"
     />
 
     <Hue
+      id="computer"
       icon="computer"
-      name="Gaming room"
       :color="['#d8d16c', '#b62c2c']"
-      :is-on="true"
+      name="Gaming room"
       :intensity="90"
+      :is-on="true"
       @toggle="onToggle"
       @change="onChange"
     />
 
     <Hue
       icon="garage"
-      name="Garage"
+      id="garage"
       color="#7e2626"
-      :is-on="false"
+      name="Garage"
       :intensity="20"
+      :is-on="false"
       @toggle="onToggle"
       @change="onChange"
     />
